@@ -1,3 +1,1 @@
-# Three.js React App
-
-This project is a Three.js application built with React and `react-three-fiber` that showcases an interactive 3D environment. Users can engage with a visually rich scene featuring dynamically rendered Tesla car models, which can be manipulated through dragging and color changing functionalities. The scene is illuminated by customizable bulbs casting shadows, enhancing the realism. The application utilizes `react-three-drei` for extended Three.js components and `react-three-cannon` for physics-based interactions, providing an immersive experience as users explore the capabilities of 3D web technology.
+digital paper doll concept
