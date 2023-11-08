@@ -17,6 +17,7 @@ const Model = (props) => {
         <primitive 
         object={model.scene}
         scale={props.scale}
+        position={props.position}
         />
         )
 }

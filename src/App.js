@@ -17,7 +17,6 @@ function App() {
 
    const orbitRef = useRef();
 
-
     return (
         <div style={{height: '100vh', width: '100vw'}}>
             <ColorPicker />
@@ -33,13 +32,15 @@ function App() {
                     <Background />
                 </Suspense>
                 <Physics>
-                <Bulb position={[7,5,0]}/>
-                <Bulb position={[0,5,0]}/>
-                <Bulb position={[-7,5,0]}/>
+                <Bulb position={[14,8,0]}/>
+                <Bulb position={[7,8,0]}/>
+                <Bulb position={[0,8,0]}/>
+                <Bulb position={[-7,8,0]}/>
+                <Bulb position={[-14,8,0]}/>
                 <Cars orbitRef={orbitRef}/>
                 <Floor/>
                 </Physics>
-                <primitive object={new AxesHelper(5)} />
+                <primitive object={new AxesHelper(8)} />
                 <OrbitControls ref={orbitRef}/>
             </Canvas>
         </div>

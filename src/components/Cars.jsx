@@ -8,7 +8,7 @@ const Cars = ({ orbitRef }) => {
     return (         
         <group>
 
-    <Suspense fallback={null}>
+    {/* <Suspense fallback={null}>
         <group>
 
         <Dragable orbitControlsRef={orbitRef}>
@@ -24,24 +24,24 @@ const Cars = ({ orbitRef }) => {
             />
         </BoundingBox>
         </Dragable>
-            </group>
-        </Suspense>
+    </group> 
+    </Suspense> */}
+       
+{/* ///////////////// HUMAN */}
         <Suspense fallback={null}>
             <Dragable orbitControlsRef={orbitRef}>
-                <BoundingBox 
-                position={[4,4,0]}
-                dims={[2,1,5]}
-                offset={[-0.1,-0.3,-0.2]}
-                >
-                    <Model 
-                    path='/tesla_model_s/scene.gltf'
-                    scale={new Array(3).fill(0.8)}
+            <Model 
+                path='/testtt.glb' // Path to your .glb model file
+                scale={new Array(3).fill(0.3)} // Scale factor, adjust as needed
+                position={[3.5,0,0]}
+            />
+     </Dragable>
+            </Suspense>
 
-                    />
-        </BoundingBox>
-            </Dragable>
-        </Suspense>
+
+        
                     </group>
+                    
         );
 }
 
