@@ -5,6 +5,7 @@ import * as THREE from 'three'
 const Model = (props) => {
     const model = useLoader(GLTFLoader, props.path)
     model.scene.traverse(child => {
+        console.log('Mesh Name:', child.name);
         if(child.isMesh) {
             child.castShadow = true
             child.receiveShadow = true

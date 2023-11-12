@@ -8,7 +8,7 @@ import Background from './components/Background';
 import Floor from './components/Floor';
 import ColorPicker from './components/ColorPicker';
 import Bulb from './components/Bulb';
-import Cars from './components/Cars';
+import Avatars from './components/Avatars';
 import CameraContorls from './components/CameraControls'; 
 import CameraButtons from './components/CameraButtons';
 
@@ -32,12 +32,12 @@ function App() {
                     <Background />
                 </Suspense>
                 <Physics>
-                <Bulb position={[14,8,0]}/>
                 <Bulb position={[7,8,0]}/>
+                <Bulb position={[3.5,8,0]}/>
                 <Bulb position={[0,8,0]}/>
+                <Bulb position={[-3.5,8,0]}/>
                 <Bulb position={[-7,8,0]}/>
-                <Bulb position={[-14,8,0]}/>
-                <Cars orbitRef={orbitRef}/>
+                <Avatars orbitRef={orbitRef}/>
                 <Floor/>
                 </Physics>
                 <primitive object={new AxesHelper(8)} />

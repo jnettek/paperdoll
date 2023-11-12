@@ -3,7 +3,7 @@ import state from "../state";
 const ColorPicker = () => {
 
     const handleClick = (e) => {
-        if (!state.activeMesh) return;
+        if (!state.activeMesh || !state.activeMesh.material) return;
         state.activeMesh.material.color.set(e.target.style.background);
     }
     return (
@@ -37,6 +37,7 @@ const ColorPicker = () => {
             width: 50
         }}
         ></div>
+                
         </div>
    
          ) 

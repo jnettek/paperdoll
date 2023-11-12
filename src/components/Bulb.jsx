@@ -19,7 +19,7 @@ const Bulb = ({position}) => {
                     <meshStandardMaterial emissive="white" />
                 </Cylinder>
         {/* The light emitted from the bulb */}
-        <pointLight castShadow color="white" 
+        <pointLight castShadow color="pink" 
         distance={20} 
         intensity={30} 
         decay={2}
