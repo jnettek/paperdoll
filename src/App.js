@@ -40,7 +40,7 @@ function App() {
                 <Avatars orbitRef={orbitRef}/>
                 <Floor/>
                 </Physics>
-                <primitive object={new AxesHelper(8)} />
+                {/* <primitive object={new AxesHelper(8)} /> */}
                 <OrbitControls ref={orbitRef}/>
             </Canvas>
         </div>

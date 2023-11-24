@@ -15,7 +15,7 @@ const ColorPicker = () => {
             margin: 'auto',
             width: 'fit-content',
             display: 'flex',
-            top: '20px'}}>
+            bottom: '20px'}}>
             <div
             onClick={handleClick}
             style={{background: 'blue',

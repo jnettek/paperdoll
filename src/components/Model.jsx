@@ -19,6 +19,7 @@ const Model = (props) => {
         object={model.scene}
         scale={props.scale}
         position={props.position}
+        onClick={() => props.onAvatarClick(props.modelName)}
         />
         )
 }

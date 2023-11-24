@@ -7,6 +7,7 @@ import * as THREE from 'three'
 const CameraControls = ({ orbitRef }) => {
 
         const vec = new THREE.Vector3();
+    
 
         useFrame(({ camera, scene }) => {
             if (state.activeMesh.name !== state.activeMeshName) {
@@ -15,6 +16,7 @@ const CameraControls = ({ orbitRef }) => {
                 ) || {}
             }
             if (state.shouldUpdate)
+            
             camera.position.lerp(vec.set(...state.cameraPos),0.1);
             orbitRef.current.target.lerp(state.target,0.1) 
             orbitRef.current.update();
